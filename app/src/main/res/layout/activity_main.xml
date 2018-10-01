@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="89dp">
+
+    <SurfaceView
+        android:id="@+id/faceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/EyesButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Eyes"
+                android:textSize="24sp"
+                tools:clickable="true"
+                tools:layout_editor_absoluteX="858dp"
+                tools:layout_editor_absoluteY="96dp" />
+
+            <RadioButton
+                android:id="@+id/SkinButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Skin"
+                android:textSize="24sp"
+                tools:clickable="true"
+                tools:layout_editor_absoluteX="982dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <RadioButton
+                android:id="@+id/HairButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contextClickable="false"
+                android:text="Hair"
+                android:textSize="24sp"
+                tools:clickable="true"
+                tools:layout_editor_absoluteX="708dp"
+                tools:layout_editor_absoluteY="92dp" />
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/RandomFaceButton"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:checked="false"
+            android:foregroundGravity="center_horizontal"
+            android:text="Random Face"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            tools:clickable="true"
+            tools:layout_editor_absoluteX="816dp"
+            tools:layout_editor_absoluteY="204dp" />
+
+        <Spinner
+            android:id="@+id/ChooseHairSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            tools:layout_editor_absoluteX="892dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <SeekBar
+            android:id="@+id/RedBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:max="255"
+            android:progress="100"
+            tools:layout_editor_absoluteX="725dp"
+            tools:layout_editor_absoluteY="358dp" />
+
+        <TextView
+            android:id="@+id/AdjustRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adjust Red"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="912dp"
+            tools:layout_editor_absoluteY="427dp" />
+
+        <SeekBar
+            android:id="@+id/BlueBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:max="255"
+            android:progress="100"
+            tools:layout_editor_absoluteX="726dp"
+            tools:layout_editor_absoluteY="496dp" />
+
+        <TextView
+            android:id="@+id/AdjustBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adjust Blue"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="919dp"
+            tools:layout_editor_absoluteY="694dp" />
+
+        <SeekBar
+            android:id="@+id/GreenBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:max="255"
+            android:progress="100"
+            tools:layout_editor_absoluteX="725dp"
+            tools:layout_editor_absoluteY="621dp" />
+
+        <TextView
+            android:id="@+id/adjustGreen"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="Adjust Green"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="903dp"
+            tools:layout_editor_absoluteY="561dp" />
+
+    </LinearLayout>
+
+
+</android.widget.LinearLayout>
